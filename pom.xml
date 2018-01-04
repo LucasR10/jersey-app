@@ -24,7 +24,10 @@
 		
 		
 		<!-- jersey  -->
-		<jersey.version>4.3.0.RELEASE</jersey.version>
+		<jersey.version>2.26-b01</jersey.version>
+		
+		<!-- javax.ws  -->
+		<javax.ws.version>2.1-m01</javax.ws.version>
 		
 		<!-- Servlet API -->
 		<servlet.version>3.1.0</servlet.version>
@@ -42,7 +45,20 @@
 	</properties>
 
 	<dependencies>
-		
+	<!-- Servlet jersey -->
+	<dependency>
+		<groupId>org.glassfish.jersey.core</groupId>
+		<artifactId>jersey-client</artifactId>
+		<version>${jersey.version}</version>
+	</dependency>
+	
+	<!-- Servlet javax.ws-->
+	<dependency>
+		<groupId>javax.ws.rs</groupId>
+		<artifactId>javax.ws.rs-api</artifactId>
+		<version>${javax.ws.version}</version>
+	</dependency>
+	
 	<!-- Servlet API -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
